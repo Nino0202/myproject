@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的5分钟自我介绍</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="my-photo.jpg" alt="个人照片" class="profile-pic">
+            <h1>姓名：[雷健]</h1>
+            <p>学校：[无锡机电高等职业技术学校] | 专业：[工业互联网]</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#about">个人简介</a></li>
+            <li><a href="#education">教育背景</a></li>
+            <li><a href="#skills">技能和成就</a></li>
+            <li><a href="#portfolio">作品展示</a></li>
+            <li><a href="#experience">个人经历</a></li>
+            <li><a href="#winter-story">寒假故事</a></li>
+            <li><a href="#future-plan">人生理想与职业规划</a></li>
+            <li><a href="#contact">联系方式</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>个人简介</h2>
+            <p>我来自河南，热爱编程、手工和运动。在业余时间，我喜欢探索新的技术领域，并积极参与各种社团活动。
+        </section>
+
+        <section id="education">
+            <h2>教育背景</h2>
+            <ul>
+                <li>2021 - 2023：就读于无锡硕放中学</li>
+                <li>2023 - 至今：就读于无锡机电高等职业技术学校</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>技能和成就</h2>
+            <ul>
+                <li>专业技能：[列举专业技能]</li>
+                <li>语言能力：英语（六级）</li>
+                <li>计算机技能：熟悉Java、Python编程，具备Web开发经验...</li>
+                <li>获奖情况：[列举重要奖项]</li>
+            </ul>
+        </section>
+
+        <section id="portfolio">
+            <h2>作品展示</h2>
+            <div class="gallery">
+                <a href="https://www.tinkercad.com/things/fBI5sb8iafZ-sizzling-kasi/edit?returnTo=%2Fdashboard%3Fcollection%3Ddesigns%26type%3Dtinkercad" target="_blank"><img src="img/model-project.png" alt="项目one"></a>
+              <!--  <a href="project2.html"><img src="project2-thumb.jpg" alt="项目two"></a> -->
+                <!-- 更多作品图片... -->
+				<p>点击上图查看详情</p>
+            </div>
+        </section>
+
+<!--        <section id="experience">
+            <h2>个人经历</h2>
+            <ul>
+                <li>参与的社团活动：[社团名称及活动详情]</li>
+                <li>志愿服务：[志愿服务项目及心得]</li>
+                <li>实习经历：[公司名称及实习岗位职责]</li>
+            </ul>
+        </section> -->
+
+        <section id="winter-story">
+            <h2>寒假旅游（点击旅游景点查看详情）</h2>
+            <li onclick="window.open('file:///D:/HBuilderX/21lj监狱/page1.html')">冰雪大世界</li>
+			<li>中央大街</li>
+			<li>松花江</li>
+        </section>
+
+        <section id="future-plan">
+            <h2>人生理想与职业规划</h2>
+            <p>我对后面在实验班得学习充满热情，我希望通过不断学习和实践，实现自己的目标</p>
+        </section>
+
+        <section id="contact">
+            <h2>联系方式</h2>
+            <p>电子邮箱：<a href="mailto:nino222@qq.com">nino222@qq.com</a></p>
+            <p>社交媒体：
+                <a href="https://github.com/nino0202" target="_blank">GitHub</a>
+            </p>
+        </section>
+    </main>
+
+    
+    <section id="feedback">
+        <h2>在线留言</h2>
+        <form action="submit-feedback.php" method="post">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+            <label for="message">留言内容：</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">提交留言</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 三三得玖. All rights reserved.</p>
+    </footer>
+</body>
+</html>
