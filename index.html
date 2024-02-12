@@ -1,78 +1,104 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自我介绍和寒假旅游情况</title>
-	<style>
-	    body {
-	        background-color: #f5deb3; /* 暖色调背景 */
-	        font-family: '宋体', sans-serif;
-	        text-align: center;
-	        padding-top: 50px;
-	    }
-	    h1 {
-	        color: #ff4500; /* 红色标题 */
-	        font-size: 3em;
-	    }
-	    p {
-	        color: #333;
-	        font-size: 1.5em;
-	        line-height: 1.6;
-	    }
-	    .container {
-	        width: 80%;
-	        margin: 0 auto;
-	    }
-	    .greeting-img {
-	        max-width: 100%;
-	        height: auto;
-	    }
-	</style>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-	<div class="container">
-	    <h1>春节快乐，恭喜发财！</h1>
-	    <img class="greeting-img" src="img/zhufu.jpg" alt="春节祝福图片">
-	    <p>在这辞旧迎新的美好时刻，祝愿您和家人身体健康，阖家欢乐，事业有成，万事如意！愿新的一年里，您的生活如春花般灿烂，如夏日般热烈，如秋果般丰硕，如冬雪般纯洁。</p>
-	    <p>让我们携手并肩，满怀信心和期待，共同迎接充满希望的新一年。新年快乐，心想事成，龙年大吉！</p>
-	</div>
-    <header>
-        <div class="header-content">
-            <img src="" alt="个人照片" class="profile-pic">
-            <h1>姓名：[雷健]</h1>
-            <p>学校：[无锡机电高等职业技术学校] | 专业：[工业互联网]</p>
-        </div>
-    </header>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>自我介绍和寒假旅游情况</title>
+		<style>
+			body {
+				background-color: #f5deb3;
+				/* 暖色调背景 */
+				font-family: '宋体', sans-serif;
+				text-align: center;
+				padding-top: 50px;
+			}
 
-    <nav>
-        <ul class="nav-menu">
-            <li><a href="#about">个人背景</a></li>
-            <li><a href="#education">教育背景</a></li>
-            <li><a href="#portfolio">作品展示</a></li>
-            <li><a href="#experience">个人经历</a></li>
-            <li><a href="#winter-story">寒假故事</a></li>
-            <li><a href="#future-plan">人生理想与职业规划</a></li>
-            <li><a href="#contact">联系方式</a></li>
-        </ul>
-    </nav>
+			h1 {
+				color: #ff4500;
+				/* 红色标题 */
+				font-size: 3em;
+			}
 
-    <main>
-        <section id="about">
-            <h2>个人简介</h2>
-            <p>我来自河南，热爱编程、手工和运动。在业余时间，我喜欢探索新的技术领域，并积极参与各种社团活动。
-        </section>
+			p {
+				color: #333;
+				font-size: 1.5em;
+				line-height: 1.6;
+			}
 
-        <section id="education">
-            <h2>教育背景</h2>
-            <ul>
-                <li>2021 - 2023：就读于无锡硕放中学</li>
-                <li>2023 - 至今：就读于无锡机电高等职业技术学校</li>
-            </ul>
-        </section>
+			.container {
+				width: 80%;
+				margin: 0 auto;
+			}
 
-  <!--      <section id="skills">
+			.greeting-img {
+				max-width: 100%;
+				height: auto;
+			}
+			#myPhoto {
+			            display: none;
+			            position: absolute;
+			            width: 200px;
+			            height: 200px;
+						margin-left: 100px;
+						margin-top: 1000px;
+			        }
+		</style>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>春节快乐，恭喜发财！</h1>
+			<img class="greeting-img" src="img/zhufu.jpg" alt="春节祝福图片">
+			<p>在这辞旧迎新的美好时刻，祝愿您和家人身体健康，阖家欢乐，事业有成，万事如意！愿新的一年里，您的生活如春花般灿烂，如夏日般热烈，如秋果般丰硕，如冬雪般纯洁。</p>
+			<p>让我们携手并肩，满怀信心和期待，共同迎接充满希望的新一年。新年快乐，心想事成，龙年大吉！</p>
+		</div>
+		<div id="nameArea" onclick="showPhoto(event)">
+			姓名：<h1>姓名：[雷健]</h1>
+		</div>
+
+		<img id="myPhoto" src="file:///C:/Users/雷健/AppData/Roaming/Tencent/QQ/Temp/38EBB4B9A1093EE85EA500D3F51BB361.jpg" alt="我的照片">
+
+		<script>
+			function showPhoto(event) {
+				event.stopPropagation(); // 阻止事件冒泡到body
+				document.getElementById('myPhoto').style.display = 'block';
+			}
+		</script>
+		<header>
+			<div class="header-content">
+				<!-- <img src="" alt="个人照片" class="profile-pic">
+				<h1>姓名：[雷健]</h1> -->
+				<p>学校：[无锡机电高等职业技术学校] | 专业：[工业互联网]</p>
+			</div>
+		</header>
+
+		<nav>
+			<ul class="nav-menu">
+				<li><a href="#about">个人背景</a></li>
+				<li><a href="#education">教育背景</a></li>
+				<li><a href="#portfolio">作品展示</a></li>
+				<li><a href="#experience">个人经历</a></li>
+				<li><a href="#winter-story">寒假故事</a></li>
+				<li><a href="#future-plan">人生理想与职业规划</a></li>
+				<li><a href="#contact">联系方式</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<section id="about">
+				<h2>个人简介</h2>
+				<p>我来自河南，热爱编程、手工和运动。在业余时间，我喜欢探索新的技术领域，并积极参与各种社团活动。
+			</section>
+
+			<section id="education">
+				<h2>教育背景</h2>
+				<ul>
+					<li>2021 - 2023：就读于无锡硕放中学</li>
+					<li>2023 - 至今：就读于无锡机电高等职业技术学校</li>
+				</ul>
+			</section>
+
+			<!--      <section id="skills">
             <h2>技能和成就</h2>
             <ul>
                 <li>专业技能：[列举专业技能]</li>
@@ -82,17 +108,19 @@
             </ul>
         </section> -->
 
-        <section id="portfolio">
-            <h2>作品展示</h2>
-            <div class="gallery">
-                <a href="https://www.tinkercad.com/things/fBI5sb8iafZ-sizzling-kasi/edit?returnTo=%2Fdashboard%3Fcollection%3Ddesigns%26type%3Dtinkercad" target="_blank"><img src="img/model-project.png" alt="项目one"style="width: 250px; height: auto;"></a>
-              <!--  <a href="project2.html"><img src="project2-thumb.jpg" alt="项目two"></a> -->
-                <!-- 更多作品图片... -->
-				<p>点击上图查看详情</p>
-            </div>
-        </section>
+			<section id="portfolio">
+				<h2>作品展示</h2>
+				<div class="gallery">
+					<a href="https://www.tinkercad.com/things/fBI5sb8iafZ-sizzling-kasi/edit?returnTo=%2Fdashboard%3Fcollection%3Ddesigns%26type%3Dtinkercad"
+						target="_blank"><img src="img/model-project.png" alt="项目one"
+							style="width: 250px; height: auto;"></a>
+					<!--  <a href="project2.html"><img src="project2-thumb.jpg" alt="项目two"></a> -->
+					<!-- 更多作品图片... -->
+					<p>点击上图查看详情</p>
+				</div>
+			</section>
 
-<!--        <section id="experience">
+			<!--        <section id="experience">
             <h2>个人经历</h2>
             <ul>
                 <li>参与的社团活动：[社团名称及活动详情]</li>
@@ -101,41 +129,41 @@
             </ul>
         </section> -->
 
-        <section id="winter-story">
-            <h2>寒假旅游（点击旅游景点查看详情）</h2>
-            <li onclick="window.open('pages/1.html')">冰雪大世界</li>
-			<li onclick="window.open('pages/2.html')">中央大街</li>
-			<li onclick="window.open('pages/3.html')">松花江</li>
-        </section>
+			<section id="winter-story">
+				<h2>寒假旅游（点击旅游景点查看详情）</h2>
+				<li onclick="window.open('pages/1.html')">冰雪大世界</li>
+				<li onclick="window.open('pages/2.html')">中央大街</li>
+				<li onclick="window.open('pages/3.html')">松花江</li>
+			</section>
 
-        <section id="future-plan">
-            <h2>人生理想与职业规划</h2>
-            <p>我对后面在实验班得学习充满热情，我希望通过不断学习和实践，实现自己的目标</p>
-        </section>
+			<section id="future-plan">
+				<h2>人生理想与职业规划</h2>
+				<p>我对后面在实验班得学习充满热情，我希望通过不断学习和实践，实现自己的目标</p>
+			</section>
 
-        <section id="contact">
-            <h2>联系方式</h2>
-            <p>电子邮箱：<a href="mailto:nino222@qq.com">nino222@qq.com</a></p>
-            <p>社交媒体：
-                <a href="https://github.com/nino0202" target="_blank">GitHub</a>
-            </p>
-        </section>
-    </main>
+			<section id="contact">
+				<h2>联系方式</h2>
+				<p>电子邮箱：<a href="mailto:nino222@qq.com">nino222@qq.com</a></p>
+				<p>社交媒体：
+					<a href="https://github.com/nino0202" target="_blank">GitHub</a>
+				</p>
+			</section>
+		</main>
 
-    
-    <section id="feedback">
-        <h2>在线留言</h2>
-        <form action="submit-feedback.php" method="post">
-            <label for="name">姓名：</label>
-            <input type="text" id="name" name="name" required>
-            <label for="message">留言内容：</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">提交留言</button>
-        </form>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 三三得玖. All rights reserved.</p>
-    </footer>
-</body>
+		<section id="feedback">
+			<h2>在线留言</h2>
+			<form action="submit-feedback.php" method="post">
+				<label for="name">姓名：</label>
+				<input type="text" id="name" name="name" required>
+				<label for="message">留言内容：</label>
+				<textarea id="message" name="message" required></textarea>
+				<button type="submit">提交留言</button>
+			</form>
+		</section>
+
+		<footer>
+			<p>&copy; 2024 三三得玖. All rights reserved.</p>
+		</footer>
+	</body>
 </html>
